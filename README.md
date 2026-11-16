@@ -1,61 +1,52 @@
-# 📈 XRates
+# XRates
 
 ## Website for getting Ukrainian hryvnia exchange rates and converting them to foreign currencies
 
-This project is a secure, scalable, and high-performance website, optimized using the NoSQL database Redis as a cache to handle multiple requests to a third-party API for exchange rates.  
+This project is a secure, scalable, and high-performance website, optimized using the NoSQL database Redis as a cache to handle multiple requests to a third-party API for exchange rates.\
 It also provides a convenient currency converter and stores conversion history.
 
----
+## Features
 
-## 🚀 Features
+- Built-in Django authentication
+- Integration with third-party API to fetch exchange rates
+- Currency converter with conversion history
+- Exchange rate caching with Redis
 
-- 🔐 Built-in Django authentication  
-- 🌐 Integration with third-party API to fetch exchange rates  
-- 💱 Currency converter with conversion history  
-- 🧠 Exchange rate caching with Redis
+## Installation & Usage (Docker Compose)
 
----
+### 1. Clone the reposity
 
-## 🧪 Installation & Usage (Docker Compose)
-
-### 1. Clone the reposity 
-
-```bash
+```
 git clone https://github.com/whales-dmtr/xrates.git
 cd xrates
 ```
 
-### 2. Run with Docker Compose 
+### 2. Run with Docker Compose
 
-```bash
+```
 docker compose up
 ```
 
----
-
-## 🌐 Access the Website
+## Access the Website
 
 After running the project (e.g., with Docker Compose or `manage.py runserver`), open your browser and go to:
 
-**http://localhost:8080/**
+\*\*[http://localhost:8080/\*\*](http://localhost:8080/**?utm_source=chatgpt.com)
 
 This is the default URL where the site will be accessible locally.
 
 If you run the app in Docker and mapped ports differently, adjust the URL accordingly.
 
----
+## Tech Stack
 
-## 🧩 Tech Stack
 - Backend: Python, Django
 - Database: PostgreSQL
 - Cache: Redis
 - Containerization: Docker & Docker Compose
 
----
+## Development
 
-## 🛠️ Development
-
-```bash
+```
 # This project requires Python 3.13.5
 # You can install it from the official Python website
 # or using pyenv:
@@ -93,8 +84,6 @@ python3.13 -m pip install -r requirements.txt
 python3 xrates/manage.py runserver
 ```
 
----
-
-## 📝 License
+## License
 
 MIT — do whatever you want but don’t blame me :)
